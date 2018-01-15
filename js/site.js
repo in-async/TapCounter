@@ -15,7 +15,7 @@
         //    color = Array(6 - color.length + 1).join('0') + color;
         //}
         //$content.css('color', '#' + color);
-        $content.css('color', 'hsl(' + (counter % 360) + ', 50%, ' + Math.min(parseInt(counter / 10), 100) + '%)');
+        $content.css('color', 'hsl(' + (counter / 5 + 180 % 360) + ', 50%, ' + Math.min(parseInt(counter / 20), 50) + '%)');
 
         refreshPanel();
     });
